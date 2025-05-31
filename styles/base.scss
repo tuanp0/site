@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./fonts" as *;
 
 * {
     margin: 0;
@@ -6,6 +7,16 @@
 }
 
 body {
-    border: 2px solid $red;
-    background: $primary;
+    @include grotesk();
+    background-image: url(../assets/img/noise.png);
+    background-repeat: repeat;
+    // background-size: 100% 100%;
+    background-attachment: fixed;
+    min-height: 100dvh;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }

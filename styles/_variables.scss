@@ -1,3 +1,25 @@
-$primary: #C9C9C9;
-$red: #FF0000;
-$green: #00FF00;
+:root {
+  --primary: #C9C9C9;
+  --white: #FFFFFF;
+  --black: #000000;
+  --almost-white: #F1F1FF;
+  --almost-black: #121212;
+  --light-yellow: #FFFBEB;
+  --light-blue: #EDFAFF;
+  --dark-orange: #3D2100;
+  --dark-blue: #182C2A;
+
+  --tablet: 786px;
+  --desktop: 992px;
+
+  --max-width: 1280px;
+  --padding: 1rem;
+
+  @media screen and (min-width: 768px) {
+
+  }
+
+  @media screen and (min-width: 992px) {
+    --padding: 2rem;
+  }
+}

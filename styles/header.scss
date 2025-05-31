@@ -1,0 +1,62 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+.header {
+    padding: 1rem var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (min-width:768px) {
+        justify-content: space-between;
+    }
+}
+
+.header__name {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 1rem;
+
+    @media screen and (min-width:768px) {
+        width: auto;
+    }
+
+    span {
+        font-size: 0;
+        display: block;
+    }
+}
+
+.header__logo {
+    margin-right: 1rem;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
+.header__contact {
+    width: 100%;
+    margin-top: 0.25rem;
+    margin-right: 0;
+
+    @media screen and (min-width:768px) {
+        width: auto;
+    }
+}
+
+.linkedin {
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.mail {
+    width: 44px;
+    height: 32px;
+    display: inline-block;
+}
