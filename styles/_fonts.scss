@@ -37,7 +37,36 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../Assets/fonts/PTSans-Bold.eot');
+    src: url('../Assets/fonts/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../Assets/fonts/PTSans-Bold.woff2') format('woff2'),
+        url('../Assets/fonts/PTSans-Bold.woff') format('woff'),
+        url('../Assets/fonts/PTSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../Assets/fonts/PTSans-Regular.eot');
+    src: url('../Assets/fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Assets/fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../Assets/fonts/PTSans-Regular.woff') format('woff'),
+        url('../Assets/fonts/PTSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @mixin grotesk($weight: 400) {
-    font-family: 'Space Grotesk';
+    font-family: 'Space Grotesk', serif;
+    font-weight: $weight;
+}
+
+@mixin ptsans($weight: 400) {
+    font-family: 'PT Sans', sans-serif;
     font-weight: $weight;
 }
