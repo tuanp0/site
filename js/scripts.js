@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const rect = elementA.getBoundingClientRect();
             const windowHeight = window.innerHeight || document.docuementElement.clientHeight;
-            console.log(rect);
+            
             if(rect.bottom <= 0 || rect.top >= windowHeight || rect.width < 768 || (rect.width < 768 && elementB.style.opacity == 1)) {
                 elementB.style.opacity = 1;
                 return;
             }
 
-            const scrollIn = Math.min(Math.max(windowHeight - rect.top - 300, 0), distance * 0.85);
+            const scrollIn = Math.min(Math.max(windowHeight - rect.top - 400, 0), distance * 0.9);
 
             const ratio = scrollIn / distance;
 

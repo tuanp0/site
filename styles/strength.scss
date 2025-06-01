@@ -1,0 +1,56 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+.strength {
+    position: relative;
+    background-color: var(--almost-white);
+    background-image: url(../assets/img/noise.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 3rem 0;
+    z-index: 0;
+}
+
+.strength__global {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.strength__solo {
+    @media screen and (min-width: 786px) {
+        width: calc(50% - 1.5rem);
+    }
+}
+
+.strength__title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.strength__text {
+    p, ul, li {
+        @include ptsans();
+        font-size: 1.125rem;
+    }
+
+    p {
+
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    li {
+
+    }
+}
+
+.more {
+    text-align: center;
+}

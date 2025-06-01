@@ -2,10 +2,13 @@
 @use "./fonts" as *;
 
 .about {
+    position: relative;
     background-color: var(--almost-black);
     background-image: url(../assets/img/noise.png);
     background-repeat: repeat;
-    padding: 2rem 0;
+    background-attachment: fixed;
+    padding: 3rem 0;
+    z-index: 0;
 }
 
 .about__container {
@@ -34,6 +37,7 @@
 
 .about__title {
     font-size: 1.5rem;
+    font-weight: 500;
     margin-bottom: 2.5rem;
 }
 
@@ -67,28 +71,41 @@
     background: var(--almost-white);
     text-align: center;
     display: block;
-    padding: 2rem 4rem;
+    padding: 1.5rem 1rem;
     text-decoration: none;
 
     @media screen and (min-width: 768px) {
         display: inline-block;
+        padding: 2rem 4rem;
     }
 }
 
-.site__img {
-
+.site__visuel {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 0 auto 1rem auto;
 }
 
 .site__title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
     color: var(--almost-black);
     line-height: 1em;
     margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+    }
 }
 
 .site__desc {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-style: italic;
     color: var(--almost-black);
     opacity: 0.65;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1rem;
+    }
 }

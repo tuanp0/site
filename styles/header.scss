@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    z-index: 1;
 }
 
 .header__name {
@@ -33,10 +34,26 @@
     height: 32px;
     margin-right: 1rem;
     display: inline-block;
+    
+    path {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+        path {
+            fill: var(--grey);
+        }
+    }
 }
 
 .mail {
     width: 44px;
     height: 32px;
     display: inline-block;
+
+    &:hover {
+        path {
+            fill: var(--grey);
+        }
+    }
 }
