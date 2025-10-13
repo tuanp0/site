@@ -12,6 +12,7 @@
     "sass": "^1.89.1"
   },
   "devDependencies": {
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-webp-compress": "^1.1.4"
   }
 }

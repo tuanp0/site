@@ -11,29 +11,19 @@
     align-items: center;
     overflow: hidden;
 
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    // .container {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 }
 
 .intro__content {
-    margin: 0 auto;
+    // margin: 0 auto;
 
-    @media screen and (min-width: 768px) {
-        width: 80%;
-    }
-}
-
-.intro__name {
-    @include grotesk(500);
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-
-    @media screen and (min-width: 768px) {
-        font-size: 2.25rem;
-    }
+    // @media screen and (min-width: 768px) {
+    //     width: 80%;
+    // }
 }
 
 .intro__poste {
@@ -69,8 +59,4 @@
     @media screen and (min-width: 992px) {
         font-size: 1.5rem;
     }
-}
-
-.intro__contact {
-
 }

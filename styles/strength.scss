@@ -8,7 +8,9 @@
     background-repeat: repeat;
     background-attachment: fixed;
     padding: 3rem 0;
-    z-index: 0;
+    z-index: 1;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .strength__global {

@@ -9,6 +9,10 @@
     background-attachment: fixed;
     padding: 3rem 0;
     z-index: 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 3rem 0 6rem 0;
+    }
 }
 
 .about__container {
@@ -21,11 +25,12 @@
 
 .about__content {
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 3rem 0 6rem 0;
     text-align: center;
 
     @media screen and (min-width: 768px) {
         width: 60%;
+        padding: 3rem 0 6rem 0;
     }
 }
 
@@ -48,6 +53,14 @@
     @media scree and (min-width: 768px) {
         font-size: 3.25rem;
     }
+}
+
+.site__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--almost-white);
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
 }
 
 .site__global {
@@ -87,7 +100,7 @@
     margin: 0 auto 1rem auto;
 }
 
-.site__title {
+.site__name {
     font-size: 1.25rem;
     font-weight: 500;
     color: var(--almost-black);

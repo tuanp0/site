@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
 
-            const scrollIn = Math.min(Math.max(windowHeight - rect.top - 400, 0), distance * 0.9);
+            const scrollIn = Math.min(Math.max(windowHeight - rect.top - 30, 0), distance * 1);
 
             const ratio = scrollIn / distance;
 

@@ -3,10 +3,9 @@
 
 body {
     @include grotesk();
-    background-color: var(--almost-white);
+    background-color: var(--white);
     background-image: url(../assets/img/noise.png);
     background-repeat: repeat;
-    // background-attachment: fixed;
     min-height: 100dvh;
 }
 
