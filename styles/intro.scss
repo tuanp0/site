@@ -19,6 +19,11 @@
 }
 
 .intro__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     // margin: 0 auto;
 
     // @media screen and (min-width: 768px) {
@@ -26,10 +31,23 @@
     // }
 }
 
+.intro__name {
+    width: 100%;
+    order: 2;
+    text-align: center;
+
+    @media screen and (min-width: 992px) {
+        order: 1;
+        width: calc(100% - 400px - 1rem);
+        text-align: left;
+    }
+}
+
 .intro__poste {
     @include grotesk(500);
     font-size: 2rem;
-    line-height: 1.25em;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
 
     @media screen and (min-width: 768px) {
         font-size: 2.5rem;
@@ -49,14 +67,37 @@
     }
 }
 
-.intro__text {
-    font-size: 1.25rem;
-
-    strong {
-        @include grotesk(500);
-    }
+.intro__location {
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
 
     @media screen and (min-width: 992px) {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+.intro__photo {
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 992px) {
+        order: 2;
+        width: calc(400px - 1rem);
+    }
+}
+
+.intro__img {
+    width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid var(--white);
+
+    @media screen and (min-width: 992px) {
+        width: 400px;
+        margin-right: 0;
+        margin-left: auto;
     }
 }
