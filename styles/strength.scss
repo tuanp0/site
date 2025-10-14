@@ -3,7 +3,7 @@
 
 .strength {
     position: relative;
-    background-color: var(--almost-white);
+    background-color: var(--white);
     background-image: url(../assets/img/noise.png);
     background-repeat: repeat;
     background-attachment: fixed;
@@ -29,9 +29,13 @@
 
 .strength__title {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+    }
 }
 
 .strength__text {

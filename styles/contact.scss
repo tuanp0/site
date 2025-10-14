@@ -1,0 +1,51 @@
+.contact {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    padding: 1.25rem 0.75rem;
+    background: var(--white);
+    border-radius: .75rem 0 0 .75rem;
+    z-index: 2;
+    box-shadow: 0 0 4px var(--black-30);
+}
+
+.linkedin {
+    width: 32px;
+    height: 32px;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+
+    @media screen and (min-width: 768px) {
+        width: 40px;
+        height: 40px;
+    }
+    
+    path {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+        path {
+            fill: var(--grey);
+        }
+    }
+}
+
+.mail {
+    width: 32px;
+    height: 26px;
+    padding: 0.25rem;
+    display: inline-block;
+
+    @media screen and (min-width: 768px) {
+        width: 40px;
+        height: 28px;
+    }
+
+    &:hover {
+        path {
+            fill: var(--grey);
+        }
+    }
+}

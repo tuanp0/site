@@ -2,20 +2,26 @@
 @use "./fonts" as *;
 
 .intro {
-    position: sticky;
-    top: 0;
-    height: 70vh;
-    height: 70dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    height: 78vh;
+    height: 78dvh;
 
-    // .container {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    @media screen and (min-width: 992px) {
+        height: 80vh;
+        height: 80dvh;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem var(--padding);
+        position: sticky;
+        top: calc(50% - 39vh);
+
+        @media screen and (min-width: 992px) {
+            top: calc(50% - 40vh);
+        }
+    }
 }
 
 .intro__content {
@@ -24,11 +30,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    // margin: 0 auto;
-
-    // @media screen and (min-width: 768px) {
-    //     width: 80%;
-    // }
+    width: 100%;
 }
 
 .intro__name {
@@ -88,7 +90,7 @@
 }
 
 .intro__img {
-    width: 300px;
+    width: 200px;
     height: auto;
     display: block;
     border-radius: 100%;
