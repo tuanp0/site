@@ -6,8 +6,8 @@
     height: 78dvh;
 
     @media screen and (min-width: 992px) {
-        height: 80vh;
-        height: 80dvh;
+        height: 70vh;
+        height: 70dvh;
     }
 
     .container {
@@ -19,7 +19,7 @@
         top: calc(50% - 39vh);
 
         @media screen and (min-width: 992px) {
-            top: calc(50% - 40vh);
+            top: calc(50% - 35vh);
         }
     }
 }
@@ -29,7 +29,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 100%;
 }
 
@@ -47,7 +47,7 @@
 
 .intro__poste {
     @include grotesk(500);
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 1.125;
     margin-bottom: 0.5rem;
 
@@ -90,7 +90,7 @@
 }
 
 .intro__img {
-    width: 200px;
+    width: 180px;
     height: auto;
     display: block;
     border-radius: 100%;
