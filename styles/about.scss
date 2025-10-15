@@ -102,10 +102,19 @@
     padding: 1.5rem;
     text-decoration: none;
     border-radius: 4px;
+    transition: all 0.2s ease-in-out;
 
     @media screen and (min-width: 768px) {
         display: inline-block;
         padding: 2rem;
+
+        &:hover {
+            background: var(--white);
+
+            .site__visuel {
+                box-shadow: 0 0 8px var(--black-30);
+            }
+        }
     }
 }
 
@@ -113,16 +122,34 @@
     display: block;
     width: 460px;
     height: auto;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto 1.25rem auto;
     border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
 }
 
 .site__name {
+    position: relative;
     font-size: 1.25rem;
     font-weight: 500;
     color: var(--almost-black);
     line-height: 1em;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    padding: 0 2rem;
+    display: inline-block;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        right: 0;
+        top: 50%;
+        background: url('../assets/img/external.svg');
+        background-size: 20px 20px;
+        transform: translateY(-50%);
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 1.5rem;
