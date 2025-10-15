@@ -111,8 +111,8 @@
         &:hover {
             background: var(--white);
 
-            .site__visuel {
-                box-shadow: 0 0 8px var(--black-30);
+            .site__name {
+                text-decoration: none;
             }
         }
     }
