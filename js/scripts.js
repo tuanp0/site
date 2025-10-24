@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateOpacity() {
         const eltA = document.querySelectorAll(".site__global");
         const eltB = document.querySelectorAll(".about__content");
-        const distance = 800;
+        const distance = 650;
 
         eltA.forEach((elementA, index) => {
             const elementB = eltB[index];
@@ -27,6 +27,16 @@ document.addEventListener("DOMContentLoaded", function() {
             elementB.style.opacity = newOpacity.toFixed(2);
         });
     }
+
+    const bodyElt = document.querySelectorAll("body");
+    const headerElt = document.querySelectorAll(".header");
+    const introElt = document.querySelectorAll(".intro");
+    const contactElt = document.querySelectorAll(".contact");
+
+    setTimeout(() => { introElt[0].classList.add('animated-opacity'); }, 700)
+    setTimeout(() => { headerElt[0].classList.add('animated'); }, 2200)
+    setTimeout(() => { introElt[0].classList.add('animated-height'); }, 2200)
+    setTimeout(() => { contactElt[0].classList.add('animated'); }, 2200)
 
     window.addEventListener('scroll', updateOpacity);
     window.addEventListener('resize', updateOpacity);

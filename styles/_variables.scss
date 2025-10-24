@@ -4,6 +4,7 @@
   --white-30: rgba(255,255,255,0.3);
   --black: #000000;
   --black-30: rgba(0,0,0,0.3);
+  --black-50: rgba(0,0,0,0.5);
   --almost-white: #F3F3F3;
   --almost-black: #171717;
   --light-grey: #D8D8D8;
@@ -14,10 +15,6 @@
 
   --max-width: 1280px;
   --padding: 1.5rem;
-
-  @media screen and (min-width: 768px) {
-
-  }
 
   @media screen and (min-width: 992px) {
     --padding: 2rem;
