@@ -1,6 +1,6 @@
 .contact {
     position: fixed;
-    right: -100px;
+    // right: -100px;
     top: 15%;
     padding: 1.25rem 0.75rem;
     background: var(--white);
@@ -9,9 +9,9 @@
     box-shadow: 0 0 4px var(--black-30);
     transition: right 1s ease-in-out;
 
-    &.animated {
+    // &.animated {
         right: 0;
-    }
+    // }
 }
 
 .linkedin {

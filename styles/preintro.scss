@@ -1,0 +1,176 @@
+@use "./animation" as *;
+
+.preintro {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 10;
+
+    &.animated {
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    &__band {
+        display: flex;
+        height: 50%;
+
+        &.-top{
+            align-items: flex-start;
+        }
+
+        &.-bottom{
+            align-items: flex-end;
+        }
+    
+
+        &__item {
+            width: 14.285%;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 0;
+            background-color: var(--almost-black);
+            background-image: url(../assets/img/noise.png);
+            background-repeat: repeat;
+
+            @media screen and (min-width: 992px) {
+
+            }
+
+            &.-top {
+                &:nth-child(1) {
+                    height: 170%;
+                }
+
+                &:nth-child(2) {
+                    height: 60%;
+                }
+
+                &:nth-child(3) {
+                    height: 120%;
+                }
+
+                &:nth-child(4) {
+                    height: 70%;
+                }
+
+                &:nth-child(5) {
+                    height: 100%;
+                }
+
+                &:nth-child(6) {
+                    height: 90%;
+                }
+
+                &:nth-child(7) {
+                    height: 130%;
+                }
+
+                &:nth-child(8) {
+                    height: 80%;
+                }
+
+                &:nth-child(9) {
+                    height: 140%;
+                }
+
+                &:nth-child(10) {
+                    height: 170%;
+                }
+            }
+
+            &.-bottom {
+                &:nth-child(1) {
+                    height: 170%;
+                }
+
+                &:nth-child(2) {
+                    height: 140%;
+                }
+
+                &:nth-child(3) {
+                    height: 80%;
+                }
+
+                &:nth-child(4) {
+                    height: 130%;
+                }
+
+                &:nth-child(5) {
+                    height: 100%;
+                }
+
+                &:nth-child(6) {
+                    height: 110%;
+                }
+
+                &:nth-child(7) {
+                    height: 70%;
+                }
+
+                &:nth-child(8) {
+                    height: 120%;
+                }
+
+                &:nth-child(9) {
+                    height: 60%;
+                }
+
+                &:nth-child(10) {
+                    height: 30%;
+                }
+
+                &.animated {
+                    height: 0;
+                    transition: height 0.7s ease-in-out;
+                }
+            }
+
+            &.-top,
+            &.-bottom {
+
+                &.animated {
+                    height: 0;
+                    transition: height 0.7s ease-in-out;
+                }
+            }
+        }
+    }
+
+    &__name {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        color: white;
+        text-align: center;
+        transform: translateY(-50%);
+        transition: opacity 0.3s ease-in-out;
+
+        &.hide {
+            opacity: 0;
+        }
+
+        &__item {
+            display: none;
+            font-size: 4rem;
+            line-height: 1.25;
+        }
+
+        &__cursor {
+            font-size: 4rem;
+            position: relative;
+            
+            &::before {
+                position: absolute;
+                content: '';
+                left: 1px;
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background: var(--grey);
+            }
+        }
+    }
+}

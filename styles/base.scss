@@ -4,6 +4,8 @@
 body {
     @include grotesk();
     position: relative;
+    // background: var(--black);
+    // overflow: hidden;
 
     &::before {
         position: absolute;
@@ -16,6 +18,10 @@ body {
         background-repeat: repeat;
         background-attachment: fixed;
         z-index: -1;
+    }
+
+    &.scroll {
+        overflow: auto;
     }
 }
 
