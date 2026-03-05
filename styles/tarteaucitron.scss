@@ -1,0 +1,112 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+#tarteaucitronRoot {
+    .tarteaucitronAlertBigBottom {
+        &#tarteaucitronAlertBig {
+            width: auto;
+            left: 50%;
+            bottom: 1rem;
+            padding: 1.5rem 1rem;
+            transform: translateX(-50%);
+            max-width: var(--max-width);
+            background: var(--white-70);
+            border-radius: 20px;
+            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+        }
+
+        #tarteaucitronDisclaimerAlert {
+            @include ptsans();
+            font-size: 1rem;
+            display: block;
+            text-align: center;
+        }
+
+        #tarteaucitronPersonalize2,
+        #tarteaucitronAllDenied2 {
+            @include grotesk();
+            padding: 0.75rem 1rem;
+            border-radius: 12px;
+            margin-top: 0.75rem;
+            color: var(--white);
+            background: var(--black-70);
+            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+
+            &:hover {
+                background: var(--black);
+            }
+        }
+
+        #tarteaucitronCloseAlert {
+            @include grotesk();
+            padding: 0.75rem 1rem;
+            border-radius: 12px;
+            background: transparent;
+            border: 1px solid transparent;
+
+            &:hover {
+                border: 1px solid var(--black);
+            }
+        }
+    }
+}
+
+#tarteaucitron {
+    #tarteaucitronServices {
+        .tarteaucitronLine {
+            .tarteaucitronAsk {
+                &#tarteaucitronScrollbarAdjust {
+                    .tarteaucitronAllow,
+                    .tarteaucitronDeny {
+                        @include grotesk();
+                        color: var(--white);
+                        background: var(--black-70);
+
+                        .tarteaucitronCheck::before {
+                            content: "✓" !important;
+                            color: var(--white);
+                        }
+
+                        .tarteaucitronCross::before {
+                            content: "✗" !important;
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+
+        #tarteaucitronServicesTitle_api {
+            .tarteaucitronLine {
+                .tarteaucitronAsk {
+                    .tarteaucitronAllow,
+                    .tarteaucitronDeny {
+                        @include grotesk();
+                        color: var(--white);
+                        background: var(--black-70);
+
+                        .tarteaucitronCheck::before {
+                            content: "✓" !important;
+                            color: var(--white);
+                        }
+
+                        .tarteaucitronCross::before {
+                            content: "✗" !important;
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+
+        #tarteaucitronSave {
+            .tarteaucitronAllow {
+                @include grotesk();
+                color: var(--white);
+                background: var(--black-70);
+            }
+        }
+    }
+}

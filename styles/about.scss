@@ -67,11 +67,20 @@
     }
 }
 
+.site__title__container {
+    @media screen and (min-width: 768px) {
+        position: sticky;
+        top: 2rem;
+        z-index: 1;
+    }
+}
+
 .site__title {
     font-size: 1.25rem;
     font-weight: 500;
     color: var(--almost-white);
     text-transform: uppercase;
+    padding: 2rem 0;
     margin-bottom: 2.5rem;
 
     @media screen and (min-width: 768px) {
