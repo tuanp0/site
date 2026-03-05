@@ -32,13 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetY = scrollY + viewportHeight / 2 - parentTop - link.offsetHeight / 2;
             if(window.innerWidth >= 768) {
                 link.style.transform = `translateY(${targetY}px)`;
-                console.log('+')
             } else {
                 const baseClass = activeElt.replace('.is-active ', '');
                 document.querySelectorAll(baseClass).forEach(el => {
                     el.style.transform = '';
                 });
-                console.log('-')
             }
         });
     }
