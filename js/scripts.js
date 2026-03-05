@@ -1,12 +1,13 @@
-import './preintro.js';
 import './header.js';
+// import './preintro.js';
+import './about.js';
 
 document.addEventListener("DOMContentLoaded", function() {
 
     function updateOpacity() {
         const eltA = document.querySelectorAll(".site__global");
-        const eltB = document.querySelectorAll(".about__content");
-        const distance = 550;
+        const eltB = document.querySelectorAll(".js-opacity");
+        const distance = 500;
 
         eltA.forEach((elementA, index) => {
             const elementB = eltB[index];
