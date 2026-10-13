@@ -9,7 +9,7 @@
     padding: 1rem var(--padding);
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     z-index: 1;
     // opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -50,9 +50,24 @@
 .title {
     @include grotesk(500);
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1;
 
     @media screen and (min-width: 768px) {
         font-size: 2.25rem;
+    }
+}
+
+.header__contact {
+    @include grotesk(500);
+    font-size: 1.375rem;
+    color: var(--black);
+    display: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
     }
 }

@@ -2,7 +2,7 @@
     position: fixed;
     // right: -100px;
     top: 15%;
-    padding: 1.25rem 0.75rem;
+    padding: 1.125rem 0.75rem;
     background: var(--white);
     border-radius: .75rem 0 0 .75rem;
     z-index: 2;
@@ -18,7 +18,7 @@
     width: 32px;
     height: 32px;
     padding: 0.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     display: inline-block;
 
     @media screen and (min-width: 768px) {
@@ -28,6 +28,25 @@
     
     path {
         transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+        path {
+            fill: var(--grey);
+        }
+    }
+}
+
+.cv {
+    width: 30px;
+    height: auto;
+    margin-left: 1px;
+    margin-bottom: .125rem;
+    display: inline-block;
+
+    @media screen and (min-width: 768px) {
+        width: 40px;
+        height: auto;
     }
 
     &:hover {

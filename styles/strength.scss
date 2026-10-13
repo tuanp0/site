@@ -1,7 +1,7 @@
 @use "./variables" as *;
 @use "./fonts" as *;
 
-.strength {
+.apropos {
     position: relative;
     background-color: var(--white);
     background-image: url(../assets/img/noise.png);
@@ -11,9 +11,28 @@
     z-index: 1;
     transform: translate3d(0,0,0);
     -webkit-transform: translate3d(0,0,0);
+
+    .linkedin {
+        margin-right: 1rem;
+    }
+
+    .linkedin,
+    .cv {
+        width: auto;
+        height: 40px;
+        padding: 0;
+        margin-bottom: 0;
+        display: inline-block;
+
+        svg {
+            width: auto;
+            height: 100%;
+            display: block;
+        }
+    }
 }
 
-.strength__global {
+.apropos__global {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -21,13 +40,13 @@
     margin-bottom: 4rem;
 }
 
-.strength__solo {
+.apropos__solo {
     @media screen and (min-width: 786px) {
         width: calc(50% - 1.5rem);
     }
 }
 
-.strength__title {
+.apropos__title {
     font-weight: 500;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -38,7 +57,7 @@
     }
 }
 
-.strength__text {
+.apropos__text {
     p, ul, li {
         @include ptsans();
         font-size: 1.125rem;

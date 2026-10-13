@@ -5,20 +5,36 @@
     position: relative;
     background-color: var(--almost-black);
     background-image: url(../assets/img/noise.png);
+    background-size: 400px 400px;
     background-repeat: repeat;
     background-attachment: fixed;
     padding: 3rem 0 0 0;
     margin: 2rem 0 0 0;
     z-index: 0;
-    border-radius: 1.5rem 1.5rem;
-    box-shadow: 0 0 16px var(--black-30);
+    border-radius: 1.25rem 1.25rem;
+    overflow: hidden;
 
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        box-shadow: inset 0 0 30px var(--black);
+        pointer-events: none;
+    }
+    
     @media screen and (min-width: 768px) {
         width: calc(100% - 3rem);
         // width: 100%;
         padding: 3rem 0 0 0;
         margin: 2rem auto;
         border-radius: 2rem;
+
+        &::after {
+            box-shadow: inset 0 0 60px var(--black);
+        }
     }
 }
 
@@ -26,6 +42,7 @@
     @media screen and (min-width: 768px) {
         position: sticky;
         top: 0;
+        padding: 0;
         z-index: 0;
     }
 }
@@ -33,7 +50,7 @@
 .about__content {
     margin: 0 auto;
     padding: 1rem 0 10rem 0;
-    text-align: center;
+    // text-align: center;
 
     @media screen and (min-width: 768px) {
         width: 70%;
@@ -49,7 +66,7 @@
 
 .about__title {
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 2.5rem;
 
     @media screen and (min-width: 768px) {
@@ -71,20 +88,22 @@
     @media screen and (min-width: 768px) {
         position: sticky;
         top: 2rem;
+        width: 70%;
+        padding: 0;
         z-index: 1;
     }
 }
 
 .site__title {
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--almost-white);
     text-transform: uppercase;
     padding: 2rem 0;
     margin-bottom: 2.5rem;
 
     @media screen and (min-width: 768px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -202,15 +221,18 @@
 .site__visuel {
     position: relative;
     width: 100%;
-    max-width: 460px;
     height: auto;
+    max-width: 500px;
     display: block;
     border-radius: 8px;
     border: 12px solid var(--almost-white);
     transition: max-width 0.2s ease-in-out;
 
     @media screen and (min-width: 992px) {
-        max-width: 600px;
+        width: auto;
+        max-width: 100%;
+        height: 33vh;
+        max-height: 480px;
     }
 }
 
